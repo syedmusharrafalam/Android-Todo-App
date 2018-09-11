@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rapidapps.instagram.realtimedatabase.AddTrackActivity">
+    <TextView
+        android:id="@+id/textViewArtisitName"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+
+        />
+<Button
+    android:id="@+id/buttonUpdate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="update"
+    />
+
+    <EditText
+        android:id="@+id/editTextTrackName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Track Name" />
+<SeekBar
+    android:max="5"
+    android:id="@+id/seekBarRating"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    />
+
+    <Button
+        android:id="@+id/buttonAddTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerGenres"
+        android:layout_marginTop="12dp"
+        android:text="ADD" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:text="Tracks"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+
+    <ListView
+        android:id="@+id/listViewTracks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonAddArtisit" />
+
+</LinearLayout>
